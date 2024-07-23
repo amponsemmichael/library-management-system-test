@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox fx:controller="com.amponsem.librarymanagementsystem.controllers.BookListController"
+      xmlns:fx="http://javafx.com/fxml" spacing="10" alignment="CENTER">
+    <TableView fx:id="bookTableView">
+        <columns>
+            <TableColumn text="ID"/>
+            <TableColumn text="Title"/>
+            <TableColumn text="Publication Date"/>
+            <TableColumn text="Category"/>
+            <TableColumn text="Copies Owned"/>
+        </columns>
+    </TableView>
+    <HBox spacing="10">
+        <Button text="Add Book" onAction="#handleAddBook"/>
+        <Button text="Edit Book" onAction="#handleEditBook"/>
+        <Button text="Delete Book" onAction="#handleDeleteBook"/>
+    </HBox>
+</VBox>

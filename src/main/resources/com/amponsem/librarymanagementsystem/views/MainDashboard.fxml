@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.GridPane?>
+
+<GridPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.amponsem.librarymanagementsystem.controllers.MainDashboardController">
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+
+    <Button text="Manage Books" onAction="#handleManageBooks" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+    <Button text="Manage Authors" onAction="#handleManageAuthors" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+    <Button text="Manage Members" onAction="#handleManageMembers" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+    <Button text="Manage Reservations" onAction="#handleManageReservations" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+    <Button text="Manage Fine Payments" onAction="#handleManageFinePayments" GridPane.rowIndex="4" GridPane.columnIndex="0"/>
+    <Button text="Manage Loans" onAction="#handleManageLoans" GridPane.rowIndex="5" GridPane.columnIndex="0"/>
+    <Button text="Manage Fines" onAction="#handleManageFines" GridPane.rowIndex="6" GridPane.columnIndex="0"/>
+</GridPane>

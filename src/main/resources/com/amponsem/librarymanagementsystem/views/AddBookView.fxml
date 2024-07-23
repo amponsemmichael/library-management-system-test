@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.DatePicker?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.amponsem.librarymanagementsystem.controllers.AddBookController">
+    <children>
+
+        <TextField fx:id="titleField" layoutX="14.0" layoutY="14.0" />
+
+        <Label text="Category:" GridPane.rowIndex="2"/>
+        <TextField fx:id="categoryIdField" layoutX="14.0" layoutY="54.0" />
+
+        <Label text="Publication Date:" GridPane.rowIndex="1"/>
+        <DatePicker fx:id="publicationDatePicker" layoutX="14.0" layoutY="94.0" />
+
+
+        <TextField fx:id="copiesOwnedField" layoutX="14.0" layoutY="134.0" />
+        <Button layoutX="14.0" layoutY="174.0" text="Save" onAction="#handleSave" />
+        <Button layoutX="84.0" layoutY="174.0" text="Cancel" onAction="#handleCancel" />
+    </children>
+</AnchorPane>
+
