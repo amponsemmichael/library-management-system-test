@@ -18,6 +18,10 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 import java.io.IOException;
+<<<<<<< HEAD
+=======
+import java.sql.Connection;
+>>>>>>> develop
 import java.sql.SQLException;
 import java.util.Optional;
 
@@ -28,12 +32,20 @@ public class BookListController {
 
     private final ObservableList<Book> bookData = FXCollections.observableArrayList();
 
+<<<<<<< HEAD
     private DatabaseHandler databaseHandler;
+=======
+    private static Connection databaseHandler;
+>>>>>>> develop
     private BookService bookService;
 
     @FXML
     public void initialize() throws SQLException {
+<<<<<<< HEAD
         databaseHandler = DatabaseHandler.getInstance();
+=======
+        databaseHandler = DatabaseHandler.createConnection();
+>>>>>>> develop
         bookService = new BookService();
 
         // Initialize columns

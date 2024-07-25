@@ -8,6 +8,10 @@ import javafx.scene.control.Alert;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
+<<<<<<< HEAD
+=======
+import java.sql.Connection;
+>>>>>>> develop
 import java.sql.SQLException;
 import java.time.LocalDate;
 import java.time.format.DateTimeParseException;
@@ -25,11 +29,19 @@ public class EditBookController {
 
     private Stage stage;
     private Book book;
+<<<<<<< HEAD
     private DatabaseHandler databaseHandler;
 
     @FXML
     private void initialize() {
         databaseHandler = DatabaseHandler.getInstance();
+=======
+    private Connection databaseHandler;
+
+    @FXML
+    private void initialize() {
+        databaseHandler = DatabaseHandler.createConnection();
+>>>>>>> develop
     }
 
     public void setStage(Stage stage) {
